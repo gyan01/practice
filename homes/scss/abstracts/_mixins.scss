@@ -3,8 +3,8 @@
 @mixin button(
   $background-color: $primary-color,
   $padding: 1rem 2rem,
-  $font-size: 1rem,
-  $border-radius: 0.938rem,
+  $font-size: map-get($font-size, medium ),
+  $border-radius: map-get($border-radius, medium ),
   $font-weight: 700,
   $color: white,
   $border:false,
@@ -21,10 +21,18 @@
   font-size: $font-size;
   border-radius: $border-radius;
   transition: $primary-transition;
-  display: block;
+  display: inline-block;
   font-weight: $font-weight;
   &:hover {
     color: white;
     background-color: darken($color: $primary-color, $amount: 10);
   }
+}
+
+@mixin flex($align:center,$justify:flex-start,$gap:5px,$wrap:wrap){
+  display: flex;
+  justify-content: $justify;
+  gap: $gap;
+  align-items: $align;
+  flex-wrap: $wrap;
 }

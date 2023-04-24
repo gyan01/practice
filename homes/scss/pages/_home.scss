@@ -2,7 +2,6 @@
 @use "../components/" as *;
 
 .home-top {
-  background: $gradient-color;
   position: relative;
   .navbar{
     background-color: transparent;
@@ -19,13 +18,13 @@
   }
   .nav-link {
     color: map-get($text-color,primary);
-    font-size: map-get($font-size,secondary);
+    font-size: map-get($font-size,small);
     &:hover {
       color: $primary-color;
     }
   }
   .alignment {
-    height: 850px;
+    height: 750px;
   }
   .toggle-btn {
     button:first-child {
@@ -45,10 +44,7 @@
     }
   }
   .home-banner-search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex($justify:space-between);
     row-gap: 15px;
     padding: 15px 30px;
     background: #ffffff;
@@ -71,7 +67,7 @@
   }
 }
 .box-shadow-navbar{
-  box-shadow: 0px 5px 20px 15px rgba($color: #000000, $alpha: .03);
+  box-shadow: map-get($box-shadow, primary );
 }
 // banner swiper slider
 .mySwiper {
@@ -79,9 +75,6 @@
   top: 0;
   right: 0;
   width: 45vw;
-  .swiper-wrapper{
-    height: 850px;
-  }
   .swiper-slide {
     height: 100%;
     img {
@@ -152,35 +145,13 @@
 
 .featured-properties{
   .featured-properties-navigation{
-    display: flex;
-    row-gap: 10px;
-    column-gap: 50px;
+    @include flex($gap: 10px 50px);
   }
-  .active{
-    color: map-get($text-color, active );
-    &:after{
-      opacity: 1;
-    }
-  }
-    li{
-      color: map-get($text-color, tertiary);
-      transition: $primary-transition;
-      cursor: pointer;
-      padding-bottom: 10px;
-      position: relative;
-      &:after{
-        position: absolute;
-        left: 0;
-        bottom: 0px;
-        content: "";
-        height: 3px;
-        border-radius: 99px;
-        background-color: map-get($text-color, active );
-        width: 100%;
-        opacity: 0;
-      }
-      &:hover{
-        @extend .active;
-      }
-  }
+}
+
+.testimonial-company{
+ >div{
+  width: 40px;
+  height: 40px;
+ }
 }

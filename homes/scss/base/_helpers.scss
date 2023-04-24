@@ -7,6 +7,9 @@
 .bg-secondary-color{
     background-color: $secondary-color;
 }
+.bg-gradient-primary{
+    background: $gradient-color;
+}
 
 //layout
 .top-bottom-padding{
@@ -37,4 +40,10 @@
     }
 }
 
+// class for border-radius
+@each $size,$value in $border-radius{
+    .border-radius-#{$size}{
+        border-radius: $value;
+    }
+}
 

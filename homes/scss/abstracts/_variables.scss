@@ -27,9 +27,9 @@ $text-color: (
 
 //text-font-size
 $font-size: (
-  primary: 1rem, //16px
-  secondary: 0.938rem, //15px
-  tertiary: 1.125rem, //18px
+  small: 0.938rem, //15px
+  medium: 1rem, //16px
+  large: 1.125rem, //18px
 );
 
 // service box icon color
@@ -42,3 +42,16 @@ $service-box-icon-color:(
 //transition time
 $primary-transition: 0.3s;
 $secondary-transition: 0.5s;
+
+
+// border-radius
+$border-radius:(
+  small: 0.625rem, // 10px
+  medium: 0.75rem, // 12px
+  large:  1.25rem // 20px
+);
+
+// box-shadow
+$box-shadow:(
+  primary: 5px 5px 20px 15px rgba($color: #000000, $alpha: .03), 
+);
