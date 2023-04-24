@@ -1,0 +1,79 @@
+@use "../abstracts/abstracts" as *;
+
+body{
+    font-family: $ff-primary;
+    font-weight: 400;
+    font-size: $fs-p; //18px
+    color: $clr-white; 
+    line-height: 1.5;
+}
+
+.container{
+    width: 1300px;
+    margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+
+.h0{
+    font-size: $fs-title; //100px;
+}
+h1 {
+    font-size: $fs-h1; //40px;
+}
+h2 {
+    font-size: $fs-h2; //30px;
+}
+h3 {
+    font-size: $fs-h3; //28px;
+}
+h4 {
+    font-size: $fs-h4; //26px;
+}
+h5 {
+    font-size: $fs-h5; //24px;
+}
+h6 {
+    font-size: $fs-h6; //20px;
+}
+p {
+    font-size: $fs-p; //18px;
+}
+
+a {
+    color: $clr-primary-hover;
+    text-decoration: none;
+    @include transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $clr-primary;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::selection {
+    background-color: $clr-primary;
+    color: $clr-primary;
+}
+
+.page {
+    margin-bottom: 0;
+}
+
+

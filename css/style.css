@@ -1,0 +1,146 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.container {
+  width: 1300px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+.h0 {
+  font-size: 100px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #d89700;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus, a:active {
+  color: #FFC600;
+}
+a:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+::-moz-selection {
+  background-color: #FFC600;
+  color: #FFC600;
+}
+
+::selection {
+  background-color: #FFC600;
+  color: #FFC600;
+}
+
+.page {
+  margin-bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.block {
+  padding: 50px 0;
+}
+
+.banner {
+  background-image: url("../../images/Inglis-RiversideAuditorium--20190409-6778.png");
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+.banner-content {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.bailboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: #FFF9ED;
+  width: 100%;
+  height: 435px;
+}
+
+.bailboard-left {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+
+.bailboard-right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.fbaa-members {
+  background-image: url(../../images/Mask-Group-4.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 480px;
+  background-repeat: no-repeat;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
