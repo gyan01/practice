@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+.button-primary {
+  @include button(
+    $padding: 0.875rem 2rem,
+    $background-color: transparent,
+    $color: $primary-color,
+    $border: true
+  );
+}
+.button-secondary {
+  @include button($padding: 0.938rem 1.875rem, $border-radius: 0.75rem);
+}
+.button-tertiary {
+  @include button($border-radius: 0.625rem);
+}

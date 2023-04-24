@@ -1,0 +1,40 @@
+@use '../abstracts/' as *;
+
+//colors
+.primary-color{
+    color: $primary-color;
+}
+.bg-secondary-color{
+    background-color: $secondary-color;
+}
+
+//layout
+.top-bottom-padding{
+    padding: 80px 0;
+}
+.box-rounded{
+    border-radius: 12px;
+}
+
+// class for text color
+@each $type,$value in $text-color{
+    .text-#{$type}-color{
+        color: $value;
+    }
+}
+
+// class for font size
+@each $size,$value in $font-size{
+    .font-#{$size}-size{
+        color: $value;
+    }
+}
+
+// class for service-box-icon background-color
+@each $type,$value in $service-box-icon-color{
+    .bg-service-icon-#{$type}-color{
+        background-color: $value;
+    }
+}
+
+

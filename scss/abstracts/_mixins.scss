@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+@mixin button(
+  $background-color: $primary-color,
+  $padding: 1rem 2rem,
+  $font-size: 1rem,
+  $border-radius: 0.938rem,
+  $font-weight: 700,
+  $color: white,
+  $border:false,
+) {
+  @if $border{
+      border: 0.125rem solid $primary-color;
+  }
+  @else{
+    border: none;
+  }
+  color: $color;
+  background-color: $background-color;
+  padding: $padding;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  transition: $primary-transition;
+  display: block;
+  font-weight: $font-weight;
+  &:hover {
+    color: white;
+    background-color: darken($color: $primary-color, $amount: 10);
+  }
+}
