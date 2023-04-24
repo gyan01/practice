@@ -96,12 +96,22 @@ img {
   padding: 50px 0;
 }
 
+.btn-basic {
+  color: #244e31;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  border-left: 5px solid #244e31;
+  border-right: 5px solid #244e31;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .banner {
-  background-image: url("../../images/Inglis-RiversideAuditorium--20190409-6778.png");
-  display: block;
+  background-image: url("../../images/banner-img.jpg");
+  background-size: cover;
   width: 100%;
   height: 100vh;
-  background-size: cover;
 }
 
 .banner-content {
@@ -120,7 +130,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: #000;
   background-color: #FFF9ED;
   width: 100%;
   height: 435px;
@@ -136,6 +146,15 @@ img {
       flex-basis: 50%;
 }
 
+.bailboard-heading {
+  color: #244e31;
+  width: 400px;
+}
+
+.bailboard-paragraph {
+  width: 490px;
+}
+
 .fbaa-members {
   background-image: url(../../images/Mask-Group-4.jpg);
   background-size: cover;
@@ -143,4 +162,36 @@ img {
   height: 480px;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.footer {
+  background-image: url("../../images/footer-bg.png");
+  background-color: #244e31;
+  background-size: 100% 100%;
+}
+
+.footer-box {
+  width: 1510px;
+  height: 95vh;
+  background-color: rgba(27, 68, 39, 0.459);
+  color: #fff;
+}
+
+.footer-contain {
+  padding-top: 200px;
+  padding-left: 150px;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 150px;
+  padding-top: 180px;
 }/*# sourceMappingURL=style.css.map */

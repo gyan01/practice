@@ -1,9 +1,11 @@
+@use "../abstracts/abstracts" as *;
+
 .bailboard{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: #FFF9ED;
+    color: $clr-black;
+    background-color: $clr-background;
     width: 100%;
     height: 435px;
 }
@@ -14,5 +16,14 @@
 
 .bailboard-right{
     flex-basis: 50%;
+}
+
+.bailboard-heading{
+    color: $clr-secondary;
+    width: 400px;
+}
+
+.bailboard-paragraph{
+    width: 490px;
 }
 

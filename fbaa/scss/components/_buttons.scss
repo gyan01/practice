@@ -1,0 +1,12 @@
+@use "../abstracts/abstracts" as *;
+
+.btn-basic{
+    color: $clr-secondary;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    border-left:5px solid $clr-secondary;
+    border-right:5px solid $clr-secondary;
+    padding-left: 50px;
+    padding-right: 50px;
+}
