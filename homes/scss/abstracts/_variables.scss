@@ -1,0 +1,44 @@
+// font-family
+$primary-font-family: "Inter", sans-serif;
+$secondary-font-family: "poppins", sans-serif;
+
+//color
+$primary-color: #5e1ee5;
+$secondary-color: #f5f9ff;
+$gradient-color: linear-gradient(
+    100.94deg,
+    rgba(231, 255, 255, 0.2) -0.2%,
+    rgba(238, 255, 254, 0.189837) 14.3%,
+    rgba(247, 255, 231, 0.158333) 27.43%,
+    rgba(183, 254, 245, 0.146646) 49.83%,
+    rgba(201, 255, 252, 0.1) 64.43%,
+    rgba(220, 255, 253, 0.2) 83.09%,
+    rgba(201, 235, 255, 0.131662) 100%
+  ),
+  rgba(255, 255, 255, 0.3);
+
+//text-color
+$text-color: (
+  primary: #333333, //dark-text
+  secondary: #374253, //medium-color-text
+  tertiary: #596579, //light-text
+  active: #F66425, // active-color
+);
+
+//text-font-size
+$font-size: (
+  primary: 1rem, //16px
+  secondary: 0.938rem, //15px
+  tertiary: 1.125rem, //18px
+);
+
+// service box icon color
+$service-box-icon-color:(
+    primary:#9672FF,
+    secondary:#4DDFFD,
+    tertiary:#F2B8EC,
+);
+
+//transition time
+$primary-transition: 0.3s;
+$secondary-transition: 0.5s;

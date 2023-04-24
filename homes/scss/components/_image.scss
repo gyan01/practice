@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.image-box-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-hover-scale{
+    transition: $primary-transition;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
