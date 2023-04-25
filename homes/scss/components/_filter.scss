@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+
+.form-check{
+    margin-bottom: 10px;
+    label,input{
+        cursor: pointer;
+    }
+}
+
+.pagination{
+    .active{
+        a{
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+}
+.search-filter{
+    .search-filter-title{
+        margin-bottom: 15px;
+        display: block;
+        font-size: map-get($font-size, large );
+        font-weight: bold;
+    }
+}
+
+.filter-range{
+    .filter-title{
+        @include flex($justify:space-between);
+    }
+    .range{
+        .range-image{
+            width: 280px;
+            height: 90px;
+        }
+        .range-input{
+            width: 280px;
+            border: none;
+            transform: translateY(-10px);
+        }
+    }
+    .range-min-max{
+        @include flex($justify:space-between);
+    }
+}

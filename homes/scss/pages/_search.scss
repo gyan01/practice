@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.search-box-primary{
+    .box-image{
+        height: 200px;
+    }
+    .box-content{
+        padding: 10px;
+        .box-content-title{
+            margin-bottom: 5px;
+        }
+        .box-address{
+            margin-bottom: 3px;
+        }
+        .box-properties{
+            margin-bottom: 5px;
+        }
+    }
+}

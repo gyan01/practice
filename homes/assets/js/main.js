@@ -14,11 +14,11 @@ function toggleNavbarClass(method) {
     navbar.classList.remove("box-shadow-navbar");
   }
 }
-if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
   toggleNavbarClass("add");
 }
 window.onscroll = () => {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     toggleNavbarClass("add");
   } else {
     toggleNavbarClass("remove");
@@ -54,7 +54,9 @@ const counterUpAnimation = new IntersectionObserver((entries) => {
     }
   })
 });
-counterUpAnimation.observe(valueDisplays[0]);
+if(valueDisplays.length!==0){
+  counterUpAnimation.observe(valueDisplays[0]);
+}
 
 // banner-slider
 let swiper = new Swiper(".home-swiper", {
@@ -125,3 +127,22 @@ let testimonialSwiper = new Swiper(".testimonial-swiper", {
     }
   }
 });
+// Testimonial swiper
+let productSwiper = new Swiper(".product-swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 2,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  autoplay: {
+    delay: 10000,
+  },
+});
+
+// multiple search select dropdown
+$('#multiple-search').dropdown();
+$('#search-dropdown').dropdown();
+$('#multiple-search1').dropdown();
+$('#search-dropdown1').dropdown();
