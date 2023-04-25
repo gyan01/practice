@@ -1,0 +1,44 @@
+@use "../abstracts/abstracts" as *;
+
+.toolkit{
+    padding: 10px;
+    margin: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: lightblue;
+    margin: 10px;
+    width: 300px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.toolkit-img-1{
+    background-image: url("../../images/toolkit-img.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.toolkit-img-2{
+    background-image: url("../../images/international-sale.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.toolkit-img-3{
+    background-image: url("../../images/resource-template.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.toolkit-img-4{
+    background-image: url("../../images/complaint-e1615962886671.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}

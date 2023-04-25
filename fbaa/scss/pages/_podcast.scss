@@ -1,15 +1,15 @@
 @use "../abstracts/abstracts" as *;
 
-.news{
+.podcast{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
 }
 
-.news-box{
+.podcast-box{
         margin: 10px;
-        width: 270px;
+        width: 350px;
         height: 460px;
         color: $clr-black;
 }

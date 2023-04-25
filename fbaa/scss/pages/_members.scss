@@ -1,0 +1,8 @@
+@use "../abstracts/abstracts" as *;
+
+.member-title{
+    color: $clr-accent;
+    text-align:center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}

@@ -1,3 +1,5 @@
+@use "../abstracts/abstracts" as *;
+
 .banner{
     background-image: url("../../images/banner-img.jpg");  
     background-size:cover;
@@ -5,8 +7,41 @@
     height: 100vh;
 }
 
+.banner-about{
+    background-image: url("../../images/inglish-1.jpg");  
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-members{
+    background-image: url("../../images/Lot-777-Parade-Ring-20190111-2424-1.jpg");  
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner-news{
+    background-image: url("../../images/inglish-1.jpg");  
+    background-size:cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.banner-podcast{
+    background-image: url("../../images/podcast-bg\ \(1\).jpg");  
+    background-size:cover;
+    width: 100%;
+    height: 90vh;
+}
+
 .banner-content{
     text-align: center;
     width: 60%;
     margin: auto;
+}
+
+.banner-title{
+    font-family: $ff-secondary;
+    font-size: $fs-title;
 }

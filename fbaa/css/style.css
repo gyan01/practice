@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -47,6 +48,10 @@ p {
   font-size: 18px;
 }
 
+.active {
+  color: #FFC600 !important;
+}
+
 a {
   color: #d89700;
   text-decoration: none;
@@ -54,7 +59,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-  color: #FFC600;
+  color: #FFC600 !important;
 }
 a:focus {
   outline: none;
@@ -114,10 +119,43 @@ img {
   height: 100vh;
 }
 
+.banner-about {
+  background-image: url("../../images/inglish-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-members {
+  background-image: url("../../images/Lot-777-Parade-Ring-20190111-2424-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-news {
+  background-image: url("../../images/inglish-1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
+.banner-podcast {
+  background-image: url("../../images/podcast-bg (1).jpg");
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+}
+
 .banner-content {
   text-align: center;
   width: 60%;
   margin: auto;
+}
+
+.banner-title {
+  font-family: "Philosopher", sans-serif;
+  font-size: 100px;
 }
 
 .bailboard {
@@ -191,4 +229,111 @@ img {
           align-items: center;
   padding-right: 150px;
   padding-top: 180px;
+}
+
+.about-body {
+  color: #555555;
+  padding: 90px;
+}
+
+.member-title {
+  color: #555555;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.toolkit {
+  padding: 10px;
+  margin: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  background-color: lightblue;
+  margin: 10px;
+  width: 300px;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.toolkit-img-1 {
+  background-image: url("../../images/toolkit-img.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.toolkit-img-2 {
+  background-image: url("../../images/international-sale.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.toolkit-img-3 {
+  background-image: url("../../images/resource-template.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.toolkit-img-4 {
+  background-image: url("../../images/complaint-e1615962886671.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.news-box {
+  margin: 10px;
+  width: 270px;
+  height: 460px;
+  color: #000;
+}
+
+.podcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+
+.podcast-box {
+  margin: 10px;
+  width: 350px;
+  height: 460px;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
