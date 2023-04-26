@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import './var.css';
-
+@import './helper.css';
 
 body{
     font-family: var(--primary-font-family);
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.8;
+    line-height: 1.5;
 }
 
 h2{
@@ -31,11 +35,30 @@ a{
     text-decoration: none;
 }
 
+/* header */
+.reception-time{
+    font-size: 14px;
+    max-width: 50px;
+}
 
+.nav-mail-btn{
+    background-color: var(--orange-medium);
+    transition: var(--primary-transition-time);
+    box-shadow: 0px 5px 0px var(--orange-dark);
+    padding: 15px;
+}
+.nav-mail-btn:hover{
+    background-color: var(--orange-light);
+    box-shadow: 0px 0px 0px var(--orange-light);
+}
 
-
-
-
-
-
-
+.nav-line-btn{
+    background-color: var(--green-medium);
+    transition: var(--primary-transition-time);
+    box-shadow: 0px 5px 0px var(--green-dark);
+    padding: 15px;
+}
+.nav-line-btn:hover{
+    background-color: var(--green-dark);
+    box-shadow: 0px 0px 0px var(--green-dark);
+}
