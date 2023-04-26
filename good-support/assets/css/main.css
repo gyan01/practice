@@ -47,7 +47,6 @@ img{
 }
 
 /* header */
-
 header{
     background-color: white;
 }
@@ -139,4 +138,29 @@ header{
 .banner{
     margin-top: 152px;
     background-color: var(--sky-blue-light);
+
+}
+
+
+/* kansai */
+.kansai-background{
+    background-image: url(../images/svg/support-list-bg.svg)
+}
+
+.kansai{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.kansai-box{
+    background-color: var(--orange-medium);
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
