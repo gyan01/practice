@@ -11,27 +11,29 @@
 <body>
 
     <!--Navbar-->
-    <header>
+    <header style="margin-bottom: 500px;" class="fixed-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-12">
-                    <span class="d-block">大阪を中心に関西全域年中無休で対応中！不用品回収はオールサポート大阪にお任せください！</span>
+                    <span class="d-block fw-700 my-2">大阪を中心に関西全域年中無休で対応中！不用品回収はオールサポート大阪にお任せください！</span>
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="good-support-logo">
-                            <img src="assets/images/jpg/good-support-logo.jpg" alt="good-support-logo">
-                        </div>
-                        <div class="support-number">
-                            <a href="tel:0120-959-399">
-                                <img src="assets/images/png/suport-info-logo.png" alt="support-info-logo">
-                                <span>0120-959-399</span>
+                            <a href="#">
+                                <img src="assets/images/jpg/good-support-logo.jpg" alt="good-support-logo">
                             </a>
-                            <span class="reception-time">受付時間 9:00~20:00 
+                        </div>
+                        <div class="support-number d-none d-lg-flex align-items-center gap-2">
+                            <a href="tel:0120-959-399" class="d-flex align-items-center gap-2">
+                                <img class="support-number-image d-block" src="assets/images/png/suport-info-logo.png" alt="support-info-logo">
+                                <span class="fw-900 fs-32 d-block">0120-959-399</span>
+                            </a>
+                            <span class="reception-time fs-14 d-block">受付時間 9:00~20:00 
                                 《年中無休》</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-12 d-lg-block d-none">
-                    <div class="d-flex align-items-start">
+                    <div class="d-flex align-items-start justify-content-end">
                         <!--Nav-mail-btn-->
                         <a class="nav-mail-btn d-flex align-items-center gap-2 rounded-bottom-4" href="https://all24.jp/contact" class="d-flex align-items-center">
                               <img class="p-2 rounded-circle bg-white" src="assets/images/svg/mail.svg" alt="mail-svg-image">
@@ -45,8 +47,45 @@
                     </div>
                 </div>
             </div>
+            <!--header navigation-->
+            <div class="header-navbar mt-4">
+                <ul class="d-flex align-items-center justify-content-center">
+                    <li class="header-navbar-item fw-700"><a href="#">初めての方へ</a></li>
+                    <li class="header-navbar-item fw-700"><a href="#">料金システム</a></li>
+                    <li class="header-navbar-item fw-700 header-navbar-dropdown position-relative d-flex align-items-center gap-3">
+                        <a href="#">片付けサービス一覧</a>
+                        <div class="header-navbar-dropdown-box start-50 position-absolute">
+                            <ul>
+                                <li><a href="#">不用品回収</a></li>
+                                <li><a href="#">丸ごと片付け</a></li>
+                                <li><a href="#">高価買取</a></li>
+                                <li><a href="#">遺品整理・生前整理</a></li>
+                                <li><a href="#">特殊清掃</a></li>
+                                <li><a href="#">ゴミ屋敷・お部屋</a></li>
+                                <li><a href="#">リフォーム・解体</a></li>
+                                <li><a href="#">お引っ越し</a></li>
+                                <li><a href="#">法人サービス</a></li>
+                            </ul>
+                        </div>
+                    
+                    </li>
+                    <li class="header-navbar-item fw-700"><a href="#">よくあるご質問</a></li>
+                    <li class="header-navbar-item fw-700"><a href="#">作業実績</a></li>
+                    <li class="header-navbar-item fw-700"><a href="#">お客様の声</a></li>
+                    <li class="header-navbar-item fw-700"><a href="#">お役立ちコラム</a></li>
+                </ul>
+            </div>
         </div>
     </header>
+
+    <!--banner-->
+    <section class="banner">
+        <div class="container">
+            <div class="w-100">
+                <img src="assets/images/png/banner.png" alt="banner">
+            </div>
+        </div>
+    </section>
 
         <!-- Kansai Section -->
         <section class="kansai-area">
