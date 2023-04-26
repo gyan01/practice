@@ -62,3 +62,26 @@ a{
     background-color: var(--green-dark);
     box-shadow: 0px 0px 0px var(--green-dark);
 }
+
+.kansai-background{
+    background-image: url(../images/svg/support-list-bg.svg)
+}
+
+.kansai{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.kansai-box{
+    background-color: var(--orange-medium);
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
