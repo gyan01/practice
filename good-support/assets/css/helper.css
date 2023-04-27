@@ -20,7 +20,7 @@
 .bg-sky-blue-medium {background-color: #A0D2FF;}
 .bg-sky-blue-light {background-color: #CDF5FF;}
 .bg-orange-dark {background-color: #FF5B00;}
-.bg-orange-medium {background-color: #FF8C00;}
+.bg-orange-medium {background-color: #FF8C00 !important;}
 .bg-orange-light {background-color: #FFA028;}
 .bg-yellow-dark {background-color: #FFE452;}
 .bg-yellow-medium {background-color: #FFF5CD;}
@@ -43,6 +43,7 @@
 .fs-56 {font-size: 3.5rem;}
 .fs-64 {font-size: 4rem;}
 .fs-72 {font-size: 4.5rem;}
+.fs-80 {font-size: 5rem;}
 .fs-88 {font-size: 5.5rem;}
 .fs-104 {font-size: 6.5rem;}
 
@@ -69,3 +70,5 @@
 .lh-60 {line-height: 60px;}
 .lh-64 {line-height: 64px;}
 .lh-72 {line-height: 72px;}
+.lh-80 {line-height: 80px;}
+.lh-88 {line-height: 88px;}
