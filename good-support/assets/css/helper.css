@@ -24,7 +24,7 @@
 .bg-sky-blue-medium {background-color: #A0D2FF;}
 .bg-sky-blue-light {background-color: #CDF5FF;}
 .bg-orange-dark {background-color: #FF5B00;}
-.bg-orange-medium {background-color: #FF8C00;}
+.bg-orange-medium {background-color: #FF8C00 !important;}
 .bg-orange-light {background-color: #FFA028;}
 .bg-yellow {background-color: #FFD200;}
 .bg-yellow-dark {background-color: #FFE452;}
@@ -76,3 +76,5 @@
 .lh-60 {line-height: 60px;}
 .lh-64 {line-height: 64px;}
 .lh-72 {line-height: 72px;}
+.lh-80 {line-height: 80px;}
+.lh-88 {line-height: 88px;}

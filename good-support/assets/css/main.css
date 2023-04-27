@@ -321,3 +321,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+.contract-banner{
+    background-image: url(../images/png/blue-bg.png);
+}
