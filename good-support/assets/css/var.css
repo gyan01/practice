@@ -18,6 +18,7 @@
     --yellow-light: #FDFADF;
     --green-dark: #009860;
     --green-medium: #00BE78;
+    --primary-color: var(--blue-dark);
 
     /* transition time */
     --primary-transition-time: 0.3s;
