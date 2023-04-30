@@ -546,8 +546,26 @@ header{
 /* jen section starts */
 
 /* kansai */
+
 .kansai-background{
-    background-image: url(../images/svg/support-list-bg.svg)
+    background-image: url(../images/svg/support-list-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.pb-100{
+    padding-bottom: 120px;
+    background-image: url(../images/svg/yellow-building.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.pb-80{
+    padding-bottom: 120px;
+    background-image: url(../images/svg/blue-house.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 .kansai{
@@ -571,3 +589,47 @@ header{
 .contract-banner{
     background-image: url(../images/png/blue-bg.png);
 }
+
+.deco{
+    position: relative;
+}
+
+.deco::before{
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: url(../images/svg/deco-title-bookmark.svg) no-repeat left;
+    transform: rotate(180deg)
+}
+
+.text-shadow{
+    text-shadow: 10px 10px 5px #ffffff;
+}
+
+.support{
+    position: relative;
+}
+
+.support::before{
+    content: "";
+    position: absolute;
+    left: -0px;
+    width: 40px;
+    height: 100%;
+    background: url(../images/svg/support-title-polygon.svg) no-repeat left;
+}
+
+.support::after{
+    content: "";
+    position: absolute;
+    right: 290px;
+    width: 40px;
+    height: 100%;
+    background: url(../images/svg/support-title-polygon.svg) no-repeat left;
+    transform: scaleX(-1)
+}
+
+
+/* Jen css end here */
