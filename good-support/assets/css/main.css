@@ -304,11 +304,12 @@ header{
 .moreover{
     background: linear-gradient(180deg, #FFF5CD 0%, #FFA028 100%);
     padding: 58px 0;
+    position: relative;
 }
 .triangle-shape-bg{
     position: absolute;
     left: 0;
-    top: 0;
+    bottom: 0;
     width: 100%;
 }
 
@@ -443,6 +444,71 @@ header{
     border-right: 10px solid var(--orange-medium);
     border-left: 10px solid var(--orange-medium);
     border-bottom: 10px solid var(--orange-medium);
+}
+
+/* price guide */
+.price-guide{
+    background-image: url(../images/png/stripes-light.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--sky-blue-medium);
+    background-blend-mode: multiply;
+    z-index: 1;
+    position: relative;
+}
+.subbg-work-img{
+    right: 5%;
+    bottom: 0;
+    z-index: -1;
+}
+.price-guide-tag{
+    z-index: -1;
+}
+.price-guide-tag::after{
+    content: "";
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    right: -15%;
+    z-index: -1;
+    top: 0;
+    background-color: var(--green-medium);
+}
+.price-guide-tag::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/svg/green-deco.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100px;
+    left: -99px;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+/* swiper slider */
+.swiper{
+    width: 50%;
+    overflow: visible;
+    height: 100%;
+}
+.swiper-slide{
+    height: auto !important;
+}
+.swiper-button-next{
+    width: 80px;
+    height: 80px;
+}
+.swiper-button-next::after{
+    content: "";
+    background-image: url(../images/svg/left-arrow.svg);
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 /* jen section starts */
