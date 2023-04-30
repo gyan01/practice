@@ -6,7 +6,7 @@ body{
     font-family: var(--primary-font-family);
     font-weight: 500;
     color: black;
-    letter-spacing: 0.8;
+    font-size: clamp(0.7rem + 0.85rem + 1 vw , 1rem);
     line-height: 1.5;
 }
 
@@ -318,7 +318,7 @@ header{
 .abundant-price-title{
     background-image: url('../images/png/back.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     margin-left: 150px;
 }
 
@@ -346,7 +346,6 @@ header{
 .service-img{
     width: 100%;
     height: 280px;
-    object-fit: cover;
     overflow: hidden;
 }
 .service-img-1{
@@ -354,6 +353,8 @@ header{
 }
 .service-img img{
     transition: var(--primary-transition-time);
+    object-fit: cover;
+    height: 100%;
 }
 .service-content{
     transition: var(--primary-transition-time);
@@ -500,6 +501,10 @@ header{
 .swiper-button-next{
     width: 80px;
     height: 80px;
+    right: -40px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .swiper-button-next::after{
     content: "";
@@ -509,6 +514,33 @@ header{
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+}
+.swiper-button-prev{
+    width: 80px;
+    height: 80px;
+    left: -40px;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.swiper-button-prev::after{
+    content: "";
+    background-image: url(../images/svg/left-arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.work-result-btn:hover{
+    background-color: var(--blue-light);
+    
+}
+
+/* customer voice */
+.customer-voice-title{
+    background-image: url(../images/png/back-blue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* jen section starts */

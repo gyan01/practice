@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper', {
     loop:true,
     centeredSlides: true,
     centeredSlidesBounds: true,
-    speed:1200
+    speed:600,
   });
 
 

@@ -1,3 +1,5 @@
+@import "./var.css";
+
 .clr-blue-dark {color: #173C79;}
 .clr-blue-medium {color: #1145AD;}
 .clr-blue-light {color: #0064DC;}
@@ -78,3 +80,24 @@
 .lh-72 {line-height: 72px;}
 .lh-80 {line-height: 80px;}
 .lh-88 {line-height: 88px;}
+
+
+.btn-custom{
+    display: inline-block;
+    padding: .8em 4em;
+    background-color: var(--blue-medium);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    position: relative;
+}
+.btn-custom svg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+.btn-blue-medium-hover:hover{
+    background-color: var(--blue-light);
+    color: white;
+}
