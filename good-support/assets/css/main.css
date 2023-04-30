@@ -207,9 +207,9 @@ header{
     background-image: url("../images/png/back_orange.png");
     background-repeat: no-repeat;
     background-size: contain;
-    position: relative;
-    z-index: -2;
     padding-top: 100px;
+    z-index: 1;
+
 }
 .price-rate-title{
     width: 800px;
@@ -299,7 +299,222 @@ header{
     top: 120px;
 }
 
-/* kansai Jen code start from here */
+/* moreover price */
+
+.moreover{
+    background: linear-gradient(180deg, #FFF5CD 0%, #FFA028 100%);
+    padding: 58px 0;
+    position: relative;
+}
+.triangle-shape-bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* abundant price section */
+
+.abundant-price-title{
+    background-image: url('../images/png/back.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 150px;
+}
+
+.abundant-price-title img{
+    bottom: 0;
+    right: 200px;
+}
+
+/* purchase result link */
+.purchase-result-link{
+    transition: var(--primary-transition-time);
+}
+.purchase-result-link:hover{
+    background-color: var(--blue-medium);
+}
+
+/*all support osakda */
+.all-support-staff-img{
+    right: 150px;
+    bottom: 0;
+}
+
+/* service box */
+
+.service-img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.service-img-1{
+    height: 205px;
+}
+.service-img img{
+    transition: var(--primary-transition-time);
+}
+.service-content{
+    transition: var(--primary-transition-time);
+    height: 168px;
+}
+.service-content-1{
+    background: linear-gradient(180deg, #6599D6 0%, #0A64CD 100%);
+}
+.service-content-2{
+    background: linear-gradient(180deg, #FFAA6C 0%, #FF7D1E 100%);
+}
+.service-content-3{
+    background: linear-gradient(180deg, #CEABE3 0%, #B97DDC 100%);
+}
+.service-content-4{
+    background: linear-gradient(180deg, #62CF91 0%, #00B950 100%);
+}
+.service-content-5{
+    background: linear-gradient(180deg, #62CFFF 0%, #05AFFA 100%);
+}
+.service-content-6{
+    background: linear-gradient(180deg, #FFD08A 0%, #FFC800 100%);
+}
+.service-box:hover .service-img img{
+    scale: 1.2;
+    opacity: .8;
+}
+.service-box:hover .service-content-1{
+   background: linear-gradient(0deg, #6599D6 0%, #0A64CD 100%);;
+}
+.service-box:hover .service-content-2{
+    background: linear-gradient(0deg, #FFAA6C 0%, #FF7D1E 100%);
+}
+.service-box:hover .service-content-3{
+    background: linear-gradient(0deg, #CEABE3 0%, #B97DDC 100%);
+}
+.service-box:hover .service-content-4{
+    background: linear-gradient(0deg, #62CF91 0%, #00B950 100%);
+}
+.service-box:hover .service-content-5{
+    background: linear-gradient(0deg, #62CFFF 0%, #05AFFA 100%);
+}
+.service-box:hover .service-content-6{
+    background: linear-gradient(0deg, #FFD08A 0%, #FFC800 100%);
+}
+
+/* point-list-section */
+
+.point-list-section{
+    background-image: url(../images/svg/yellow-building.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    padding: 80px 0;
+}
+
+/* contract-year */
+
+.contract-year{
+    background-image: url(../images/png/back.png);
+    z-index: -1;
+    position: relative;
+}
+.contract-year-title:before{
+    content: '';
+    width: 100px;
+    height: 100%;
+    background-color: var(--green-medium);
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: -1;
+}
+.contract-year-title:after{
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/svg/green-deco.svg);
+}
+
+/* youtube */
+.youtube-box{
+    border-right: 10px solid var(--orange-medium);
+    border-left: 10px solid var(--orange-medium);
+    border-bottom: 10px solid var(--orange-medium);
+}
+
+/* price guide */
+.price-guide{
+    background-image: url(../images/png/stripes-light.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--sky-blue-medium);
+    background-blend-mode: multiply;
+    z-index: 1;
+    position: relative;
+}
+.subbg-work-img{
+    right: 5%;
+    bottom: 0;
+    z-index: -1;
+}
+.price-guide-tag{
+    z-index: -1;
+}
+.price-guide-tag::after{
+    content: "";
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    right: -15%;
+    z-index: -1;
+    top: 0;
+    background-color: var(--green-medium);
+}
+.price-guide-tag::before{
+    position: absolute;
+    content: "";
+    background-image: url(../images/svg/green-deco.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100px;
+    left: -99px;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+/* swiper slider */
+.swiper{
+    width: 50%;
+    overflow: visible;
+    height: 100%;
+}
+.swiper-slide{
+    height: auto !important;
+}
+.swiper-button-next{
+    width: 80px;
+    height: 80px;
+}
+.swiper-button-next::after{
+    content: "";
+    background-image: url(../images/svg/left-arrow.svg);
+    transform: rotate(180deg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/* jen section starts */
+
+/* kansai */
+
 .kansai-background{
     background-image: url(../images/svg/support-list-bg.svg);
     background-size: cover;
